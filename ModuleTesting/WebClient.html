@@ -1,0 +1,126 @@
+﻿<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+
+    function Subscribe()
+    {
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/Subscribe/",
+            contentType: "application/json; charset=utf-8",
+            success: function (arg) {
+                $("id").text(arg);
+            }
+        })
+    }
+
+    function Unsubscribe(id)
+    {
+        var arg = "{'id':" + id + "}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/Unsubscribe/",
+            contentType: "application/json; charset=utf-8",
+            data: arg,
+            success: function (arg) {
+                $("#result").text(arg.data);
+            }
+        })
+    }
+
+    function CreateTests(id, result)
+    {
+        var arg = "{'id':" + id + ", 'result':[" + result + "]}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/CreateTests/",
+            contentType: "application/json; charset=utf-8",
+            data: arg
+        })
+    }
+
+    function TestsReady(id)
+    {
+        var arg = "{'id':" + id + "}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/TestsReady/",
+            contentType: "application/json; charset=utf-8",
+            data: arg,
+            success: function (arg) {
+                alert(arg);
+            }
+        })
+    }
+
+    function GetQuestions(id)
+    {
+        var arg = "{'id':" + id + "}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/GetQuestions/",
+            contentType: "application/json; charset=utf-8",
+            data: arg,
+            success: function (arg) {
+                alert(arg.length);
+            }
+        })
+    }
+
+    function GetGradeLucky(id, result)
+    {
+        var arg = "{'id':" + id + ", 'result':[" + result + "]}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/GetGradeLucky/",
+            contentType: "application/json; charset=utf-8",
+            data: arg
+        })
+    }
+
+    function ResultsReady(id) {
+        var arg = "{'id':" + id + "}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/ResultsReady/",
+            contentType: "application/json; charset=utf-8",
+            data: arg,
+            success: function (arg) {
+                alert(arg);
+            }
+        })
+    }
+
+    function GetFinishResult(id)
+    {
+        var arg = "{'id':" + id + "}";
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "http://localhost:8002/api/RESTReciver/GetFinishResult/",
+            contentType: "application/json; charset=utf-8",
+            data: arg,
+            success: function (arg) {
+                alert(arg);
+            }
+        })
+    }
+
+</script>
+
+<input type="text" id="id" size="40"> id</input><br />
+<input type="text" id="result" size="40"> result</input><br />
+<input type="button" onclick="Subscribe();">subscribe</input><br />
+<input type="button" onclick="Unsubscribe(document.getElementById('id').value);">unsubscribe</input><br />
+<input type="button" onclick="CreateTests(document.getElementById('id').value, document.getElementById('result').value);">create tests</input><br />
+<input type="button" onclick="TestsReady(document.getElementById('id').value);">tests is ready ?</input><br />
+<input type="button" onclick="GetQuestions(document.getElementById('id').value);">get questions</input><br />
+<input type="button" onclick="GetGradeLucky(document.getElementById('id').value, document.getElementById('result').value);">get grade lucky</input><br />
+<input type="button" onclick="ResultsReady(document.getElementById('id').value);">results is ready ?</input><br />
+<input type="button" onclick="GetFinishResult(document.getElementById('id').value);">get finish result</input><br />

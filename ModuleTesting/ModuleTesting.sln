@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTServer", "RESTServer\RESTServer.csproj", "{F1040EA3-39A9-4B5A-B04D-034DD9E3336F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89B41E44-A4E3-471C-875A-6759687507A6} = {89B41E44-A4E3-471C-875A-6759687507A6}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{F90B0289-5F7E-4426-83F6-98BEA203315B}"
+	ProjectSection(SolutionItems) = preProject
+		WebClient.html = WebClient.html
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleTesting", "ModuleTesting\ModuleTesting.csproj", "{89B41E44-A4E3-471C-875A-6759687507A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{D7AE39F7-BA8E-4AB2-BAE2-48796E29A83D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModuleTesting", "ModuleTesting", "{A224B16E-F94C-4218-8382-C7CAEA9FCABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Srv", "Srv", "{AA6690FD-CE71-4DF9-B14F-3AD28568B80F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{96461B52-46A4-4E56-BEF1-133971DFC40F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\testLusher.html = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\testLusher.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JS", "JS", "{BEBF501F-CD6B-4C3D-89B7-6BA785950F2E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\JS\jquerry.js = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\JS\jquerry.js
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\JS\testLusher.js = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\JS\testLusher.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{AF4E5265-15CB-4F2E-AAEC-F14624E0F715}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "buttons", "buttons", "{76D55616-4B3D-4FAB-AE68-D6544D5E1F1A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\continue.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\continue.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\continue3.jpg = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\continue3.jpg
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\finish.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\finish.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\finish2.jpg = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\finish2.jpg
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\getLucky.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\getLucky.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\no.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\no.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\start.jpg = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\start.jpg
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\startTesting.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\startTesting.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\yes.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\buttons\yes.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "colors", "colors", "{F1E34931-0848-4032-85F4-408611CB0F10}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\black.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\black.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\blue.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\blue.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\fiol.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\fiol.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\green.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\green.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\kor.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\kor.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\rad.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\rad.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\ser.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\ser.png
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\yellow.png = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\images\colors\yellow.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{A4BFAEBC-CD00-431D-8758-15EEFEE60259}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\css\testLusher.css = ..\..\..\Диплом\Текст&Программа\ПроектТестирование\ModuleTesting\views\css\testLusher.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1040EA3-39A9-4B5A-B04D-034DD9E3336F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1040EA3-39A9-4B5A-B04D-034DD9E3336F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1040EA3-39A9-4B5A-B04D-034DD9E3336F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1040EA3-39A9-4B5A-B04D-034DD9E3336F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B41E44-A4E3-471C-875A-6759687507A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B41E44-A4E3-471C-875A-6759687507A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B41E44-A4E3-471C-875A-6759687507A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B41E44-A4E3-471C-875A-6759687507A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AE39F7-BA8E-4AB2-BAE2-48796E29A83D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AE39F7-BA8E-4AB2-BAE2-48796E29A83D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AE39F7-BA8E-4AB2-BAE2-48796E29A83D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AE39F7-BA8E-4AB2-BAE2-48796E29A83D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1040EA3-39A9-4B5A-B04D-034DD9E3336F} = {AA6690FD-CE71-4DF9-B14F-3AD28568B80F}
+		{F90B0289-5F7E-4426-83F6-98BEA203315B} = {AA6690FD-CE71-4DF9-B14F-3AD28568B80F}
+		{89B41E44-A4E3-471C-875A-6759687507A6} = {AA6690FD-CE71-4DF9-B14F-3AD28568B80F}
+		{D7AE39F7-BA8E-4AB2-BAE2-48796E29A83D} = {AA6690FD-CE71-4DF9-B14F-3AD28568B80F}
+		{AA6690FD-CE71-4DF9-B14F-3AD28568B80F} = {A224B16E-F94C-4218-8382-C7CAEA9FCABE}
+		{96461B52-46A4-4E56-BEF1-133971DFC40F} = {A224B16E-F94C-4218-8382-C7CAEA9FCABE}
+		{BEBF501F-CD6B-4C3D-89B7-6BA785950F2E} = {96461B52-46A4-4E56-BEF1-133971DFC40F}
+		{AF4E5265-15CB-4F2E-AAEC-F14624E0F715} = {96461B52-46A4-4E56-BEF1-133971DFC40F}
+		{76D55616-4B3D-4FAB-AE68-D6544D5E1F1A} = {AF4E5265-15CB-4F2E-AAEC-F14624E0F715}
+		{F1E34931-0848-4032-85F4-408611CB0F10} = {AF4E5265-15CB-4F2E-AAEC-F14624E0F715}
+		{A4BFAEBC-CD00-431D-8758-15EEFEE60259} = {96461B52-46A4-4E56-BEF1-133971DFC40F}
+	EndGlobalSection
+EndGlobal

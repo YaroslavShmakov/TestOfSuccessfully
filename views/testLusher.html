@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<script type="text/javascript" src="JS/jquerry.js"></script>
+		<script type="text/javascript" src="JS/testLusher.js" ></script>
+		
+		<link href="css/testLusher.css" rel="stylesheet" type="text/css"/>
+		<meta charset="utf-8">
+		<title>Тестирование везучести</title>
+	</head>
+
+	<body>
+        <div id="startLusherTest" style = "display: block;">
+			<button onclick="toggle(startLusherTest); toggle(test_lusher); Subscribe(); setDefault()">
+			<img src="images\buttons\start.jpg">
+				Приступить к тестированию!
+			</button>
+        </div>
+
+		<div id="test_lusher" style="display: none;">
+			<div style="float: left; margin-right: 3px">
+				<font face="Verdana" size=5>
+				Выберите карточку того цвета, который сейчас наиболее Вам приятен. <br>
+				Просьба к Вам при этом не связывать цвет карточки с цветом Вашей одежды, машины и т.п. <br>
+				После Вашего выбора эта карточка исчезнет, и Вы повторите свои действия до тех пор,  <br>
+				пока не переберете все карточки. <br>
+				Теперь кликните по выбранному цвету.<br>
+				</font>
+			</div>
+
+			<table width="870", height="370">
+				<tr>
+					<td width="212", height="177">
+						<button id="black_color" onclick="toggle(black_color); color_click(7)">
+							<img src="images\colors\black.png">
+						</button>
+					</td>
+					<td width="212", height="177">
+						<button id="blue_color" onclick="toggle(blue_color); color_click(1)">
+							<img src="images\colors\blue.png"> 
+						</button>
+					</td>
+					<td width="212", height="177">
+						<button  id="fiol_color" onclick="toggle(fiol_color); color_click(5)">
+							<img src="images\colors\fiol.png"> 
+						</button>
+					</td>
+					<td width="212", height="177">
+						<button id="green_color" onclick="toggle(green_color); color_click(2)">
+							<img src="images\colors\green.png"> 
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td width="212", height="177">
+						<button id="kor_color" onclick="toggle(kor_color); color_click(6)">
+							<img src="images\colors\kor.png"> 
+						</button>
+					</td>
+					<td width="212", height="177">
+						<button id="rad_color" onclick="toggle(rad_color); color_click(3)">
+							<img src="images\colors\rad.png"> 
+						</button>
+					</td>
+					<td width="212", height="177">
+						<button id="ser_color" onclick="toggle(ser_color); color_click(8)">
+							<img src="images\colors\ser.png"> 
+						</button>
+					</td>
+					<td width="212", height="177">
+						<button id="yellow_color" onclick="toggle(yellow_color); color_click(4)">
+							<img src="images\colors\yellow.png"> 
+						</button>
+					</td>
+				</tr>
+			</table>
+
+
+
+		</div>
+
+		<div id="instructions" style = "display: none; font-size: 180%;">
+			Методика тестирования предполагает два подхода с небольшим интервалом между ними. <br>
+			Пожалуйста, подождите несколько минут, и нажмите кнопку «продолжить тестирование». <br>
+			Не пытайтесь вспомнить тот порядок, в котором вы выбирали цвета в первый раз. <br>
+			Но и не старайтесь специально разложить их по-другому. <br>
+			Просто выбирайте понравившиеся цвета, как будто видите их впервые. <br>			
+			<button id="startTest" onclick="toggle(instructions); showLusherTest()">Продолжить тестирование.
+				<img src="images\buttons\continue.png">
+			</button>
+		</div>
+		
+		<div id="instrTest" style = "display: none;">
+            <h1 size=15>
+				В данном блоке тестирования Вам будут предложены вопросы/утверждения.<br>
+				Выберите один из наиболее подходящих вариантов ответа. <br>
+			</h1>
+            
+			<button onclick="toggle(instrTest); toggle(charactTest); nextQuestion();">
+				<img src="images\buttons\continue.png">
+				Приступить к тестированию!
+			</button>
+        </div>
+		
+		<div id="charactTest" style = "display: none">
+			 <h1 id="question" size=14>
+				Текст теста <br>
+			</h1>
+			<button id="yes" onclick="Yes()">
+				<img src="images\buttons\yes.png">
+			</button>
+			
+			<button id ="no" onclick="No()">
+				<img src="images\buttons\no.png">
+			<button>
+		</div>
+		<div id = "show" style = "font-size: 130%; display: none " size=8>
+			<h1 id= "lucky">Обработка результатов завершена. Жмите кнопку "Завершить тестирование", чтобы ознакомиться с оценкой везучести.<h1>
+			<button id ="getLucky" onclick="toggle(getLucky); Show(); Unsubscr()">
+				<img src="images\buttons\finish.png">
+			<button>
+		</div>
+	</body>
+</html>
